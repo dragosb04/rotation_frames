@@ -10,6 +10,7 @@ add_compile_options(-Wall -Wextra -Wpedantic -Wshadow)
 # Library
 add_library(geometry
     src/vec3.cpp
+    src/mat3.cpp
 )
 target_include_directories(geometry PUBLIC include)
 
@@ -26,6 +27,7 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 add_executable(rotation_tests
     tests/test_vec3.cpp
+    tests/test_mat3.cpp
 )
 target_link_libraries(rotation_tests PRIVATE geometry GTest::gtest_main)
 
