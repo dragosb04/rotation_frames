@@ -12,6 +12,7 @@ add_library(geometry
     src/vec3.cpp
     src/mat3.cpp
     src/rotation.cpp
+    src/frame.cpp
         include/geometry/rotation.h
 )
 target_include_directories(geometry PUBLIC include)
@@ -31,6 +32,7 @@ add_executable(rotation_tests
     tests/test_vec3.cpp
     tests/test_mat3.cpp
     tests/test_rotation.cpp
+    tests/test_frame.cpp
 )
 target_link_libraries(rotation_tests PRIVATE geometry GTest::gtest_main)
 
