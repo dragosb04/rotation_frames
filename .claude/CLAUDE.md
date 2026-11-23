@@ -58,7 +58,7 @@ Always build and run the tests after a change. A step is done only when it build
 - [x] 3. `Mat3` + tests
 - [x] 4. Rotations: `rotationX/Y/Z`, `fromRollPitchYaw`, `fromAxisAngle` + tests
 - [x] 5. `Frame`: `toParent`, `toChild`, `inverse`, `compose` + tests
-- [ ] 6. `examples/demo.cpp`: camera mounted on a car, convert a detection to the vehicle frame and back
+- [x] 6. `examples/demo.cpp`: camera mounted on a car, convert a detection to the vehicle frame and back
 - [ ] 7. Break a sign in `rotationZ` on purpose, confirm tests fail, revert
 - [ ] 8. GitHub Actions CI (`ubuntu-latest`: configure, build, ctest)
 - [ ] 9. README.md

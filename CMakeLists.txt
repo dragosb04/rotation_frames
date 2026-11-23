@@ -38,3 +38,7 @@ target_link_libraries(rotation_tests PRIVATE geometry GTest::gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(rotation_tests)
+
+# Demo
+add_executable(rotation_demo examples/demo.cpp)
+target_link_libraries(rotation_demo PRIVATE geometry)
